@@ -1,60 +1,56 @@
-# Getting Started with GitHub Copilot
+# Mergington High School Activities
 
-![](https://github.com/npradhana/skills-getting-started-with-github-copilot/actions/workflows/1-preparing.yml/badge.svg)
-![](https://github.com/npradhana/skills-getting-started-with-github-copilot/actions/workflows/2-first-introduction.yml/badge.svg)
-![](https://github.com/npradhana/skills-getting-started-with-github-copilot/actions/workflows/3-copilot-edits.yml/badge.svg)
-![](https://github.com/npradhana/skills-getting-started-with-github-copilot/actions/workflows/4-copilot-on-github.yml/badge.svg)
+This web application allows students to sign up for and unregister from extracurricular activities at Mergington High School.
 
-_Get started using GitHub Copilot in less than an hour._
+## Features
 
-## Welcome
+- View available activities
+- Sign up for an activity
+- Unregister from an activity
 
-- **Who is this for**: Developers at any experience level looking to accelerate their code workflow.
-- **What you'll learn**: The different ways to interact with Copilot to explain, write, debug, and develop code.
-- **What you'll build**: You will guide Copilot to update Mergington High School's extracurricular activities website.
-- **Prerequisites**:
-  - Skills exercise: [Introduction to GitHub](https://github.com/skills/introduction-to-github)
-  - Familiarity with [VS Code](https://code.visualstudio.com/)
-  - Basic coding principles
-- **How long**: This exercise takes less than one hour to complete.
+## Installation
 
-In this exercise, you will:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mergington-high-school-activities.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd mergington-high-school-activities
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-1. Use a preconfigured Codespace to run VS Code in your browser.
-1. Learn different interaction options to develop with GitHub Copilot.
-1. Use Copilot to summarize and review your pull request.
+## Usage
 
-### How to start this exercise
+1. Start the development server:
+   ```bash
+   npm start
+   ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+## Testing
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+Run the tests using Jest:
+```bash
+npm test
+```
 
-2. In the new tab, most of the fields will automatically fill in for you.
+## API Endpoints
 
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will use [Actions minutes](https://docs.github.chttps://github.com/npradhana/skills-getting-started-with-github-copilot/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+- `GET /activities`: Fetch the list of available activities.
+- `POST /activities/:activity/signup?email=:email`: Sign up for an activity.
+- `POST /activities/:activity/unregister?email=:email`: Unregister from an activity.
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
+## File Structure
 
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+- `src/static/index.html`: The main HTML file.
+- `src/static/styles.css`: The CSS file for styling.
+- `src/static/app.js`: The JavaScript file containing the application logic.
+- `src/static/app.test.js`: The JavaScript file containing the tests.
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+## License
 
-   <a id="start-exercise" href="https://github.com/npradhana/skills-getting-started-with-github-copilot/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
-
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/getting-started-with-github-copilot) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+This project is licensed under the MIT License.
